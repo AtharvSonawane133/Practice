@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Interactivity Classes Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Tailwind CSS Interactivity Classes Examples</h1>
+
+        <!-- Focus Classes Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Focus Classes</h2>
+            <p class="mb-4 text-gray-600">Click or tab to focus on the input field below:</p>
+            <input type="email" class="border p-3 w-full rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" placeholder="Enter your email">
+        </section>
+
+        <!-- Hover Classes Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Hover Classes</h2>
+            <p class="mb-4 text-gray-600">Hover over the button below:</p>
+            <button class="bg-indigo-500 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Submit Form</button>
+        </section>
+
+        <!-- Active Classes Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Active Classes</h2>
+            <p class="mb-4 text-gray-600">Click and hold the button below:</p>
+            <button class="bg-indigo-600 text-white px-6 py-3 rounded active:bg-indigo-900 transition">Buy Now</button>
+        </section>
+
+        <!-- Cursor Classes Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Cursor Classes</h2>
+            <p class="mb-4 text-gray-600">Hover over the buttons below:</p>
+            <div class="flex space-x-4">
+                <button class="bg-green-500 text-white px-6 py-3 rounded cursor-pointer">Clickable Button</button>
+                <button disabled class="bg-gray-400 text-white px-6 py-3 rounded cursor-not-allowed">Disabled Button</button>
+            </div>
+        </section>
+
+        <!-- Transition Classes Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Transition Classes</h2>
+            <p class="mb-4 text-gray-600">Hover over the card below for smooth transition:</p>
+            <div class="bg-blue-500 text-white p-6 rounded-lg hover:bg-blue-700 transition">
+                <h3 class="text-xl font-bold">Dashboard Item</h3>
+                <p>Click to view details</p>
+            </div>
+        </section>
+
+        <!-- Opacity Classes Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Opacity Classes</h2>
+            <p class="mb-4 text-gray-600">Example of a loading state:</p>
+            <button class="bg-green-500 text-white px-6 py-3 rounded opacity-60 cursor-not-allowed" disabled>Loading...</button>
+        </section>
+
+        <!-- Combined Example -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Combined Example - Interactive Form</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <form class="space-y-4">
+                    <input type="text" class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Username">
+                    <input type="password" class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Password">
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded cursor-pointer hover:bg-blue-700 active:bg-blue-800 transition">Sign In</button>
+                </form>
+                <p class="text-center mt-4">
+                    <a href="#" class="text-blue-600 hover:text-blue-800 transition">Forgot Password?</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

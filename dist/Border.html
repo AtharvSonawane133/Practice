@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounded Borders - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-center text-3xl font-semibold text-red-600 mb-8">
+        Rounded Borders in Tailwind CSS
+    </h1>
+
+    <!-- Basic Rounded Borders -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+        <div class="p-4 border-2 rounded-sm bg-white">rounded-sm</div>
+        <div class="p-4 border-2 rounded bg-white">rounded</div>
+        <div class="p-4 border-2 rounded-md bg-white">rounded-md</div>
+        <div class="p-4 border-2 rounded-lg bg-white">rounded-lg</div>
+
+        <div class="p-4 border-2 rounded-xl bg-white">rounded-xl</div>
+        <div class="p-4 border-2 rounded-2xl bg-white">rounded-2xl</div>
+        <div class="p-4 border-2 rounded-3xl bg-white">rounded-3xl</div>
+        <div class="p-4 border-2 rounded-full bg-white">rounded-full</div>
+
+    </div>
+
+    <!-- Individual Corners -->
+    <h2 class="text-xl font-semibold mt-10 mb-4 text-blue-600">
+        Individual Rounded Corners
+    </h2>
+
+    <div class="grid grid-cols-2 gap-6 text-center">
+        <div class="p-4 border-2 rounded-t-lg bg-white">rounded-t-lg</div>
+        <div class="p-4 border-2 rounded-b-lg bg-white">rounded-b-lg</div>
+        <div class="p-4 border-2 rounded-l-lg bg-white">rounded-l-lg</div>
+        <div class="p-4 border-2 rounded-r-lg bg-white">rounded-r-lg</div>
+    </div>
+
+    <!-- Buttons -->
+    <h2 class="text-xl font-semibold mt-10 mb-4 text-blue-600">
+        Rounded Buttons (Real World)
+    </h2>
+
+    <div class="flex gap-4 flex-wrap">
+        <button class="px-4 py-2 bg-blue-500 text-white rounded">Login</button>
+        <button class="px-4 py-2 bg-green-500 text-white rounded-lg">Submit</button>
+        <button class="px-4 py-2 bg-red-500 text-white rounded-full">Delete</button>
+    </div>
+
+    <!-- Inputs -->
+    <h2 class="text-xl font-semibold mt-10 mb-4 text-blue-600">
+        Rounded Inputs
+    </h2>
+
+    <input type="text" placeholder="Enter name"
+        class="w-full p-3 border rounded-md mb-3">
+
+    <input type="text" placeholder="Search"
+        class="w-full p-3 border rounded-full">
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Container Example</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- NAVBAR (Full Width Background) -->
+    <div class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">MyWebsite</h1>
+            <nav class="space-x-4">
+                <a href="#" class="hover:text-yellow-400">Home</a>
+                <a href="#" class="hover:text-yellow-400">About</a>
+                <a href="#" class="hover:text-yellow-400">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="bg-green-300 py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900">
+                Tailwind Container Example
+            </h2>
+            <p class="mt-4 text-lg">
+                This section has a full-width background but centered content.
+            </p>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container mx-auto p-6">
+        <h3 class="text-2xl font-semibold mb-4">Main Content</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow rounded">
+                Card 1
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                Card 2
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                Card 3
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bg-gray-800 text-white mt-10">
+        <div class="container mx-auto text-center p-4">
+            © 2026 MyWebsite. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>

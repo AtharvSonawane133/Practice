@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body>
+<body class="h-screen bg-gray-100">
+
+    <!-- FIXED NAVBAR -->
+    <div class="fixed top-0 left-0 w-full bg-black text-white p-4 z-50 text-center">
+        Fixed Navbar (position: fixed)
+    </div>
+
+    <!-- SPACE FOR NAVBAR -->
+    <div class="h-16"></div>
+
+    <!-- MAIN CONTENT -->
+    <div class="p-6 space-y-10">
+
+        <!-- RELATIVE + ABSOLUTE -->
+        <div class="relative h-52 bg-blue-200 flex items-center justify-center">
+            Parent (relative)
+
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1">
+                Absolute Box
+            </div>
+        </div>
+
+        <!-- CENTER USING POSITION -->
+        <div class="relative h-52 bg-green-200">
+            <div class="absolute top-1/2 left-1/2 
+                        -translate-x-1/2 -translate-y-1/2 
+                        bg-black text-white px-4 py-2">
+                Centered Box
+            </div>
+        </div>
+
+        <!-- STICKY -->
+        <div class="sticky top-16 bg-yellow-400 p-3 text-center">
+            Sticky Section Header
+        </div>
+
+        <!-- SCROLL CONTENT -->
+        <div class="space-y-4">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </div>
+
+    <!-- FIXED BUTTON -->
+    <button class="fixed bottom-5 right-5 bg-green-600 text-white px-4 py-2 rounded-full">
+        Fixed Button
+    </button>
+
+</body>
+</html>

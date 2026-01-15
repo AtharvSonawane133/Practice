@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body class="h-screen bg-slate-900 p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-center text-blue-950 bg-yellow-500 p-4 rounded mb-6">Height in Tailwind CSS</h1>
+
+        <!-- Notes Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Notes on Height Utilities</h2>
+            <p class="text-gray-700 mb-4">
+                Tailwind CSS provides a set of height utilities that allow you to control the height of elements easily. These utilities use the <code>h-</code> prefix followed by a size value. Heights can be fixed (e.g., pixels), relative (e.g., percentages), or responsive. Common uses include setting container heights, creating consistent layouts, and ensuring elements fit within specific dimensions.
+            </p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><strong>Fixed Heights:</strong> Use classes like <code>h-4</code> (1rem), <code>h-8</code> (2rem), up to <code>h-96</code> (24rem).</li>
+                <li><strong>Relative Heights:</strong> <code>h-full</code> (100%), <code>h-screen</code> (100vh), <code>h-1/2</code> (50%), etc.</li>
+                <li><strong>Auto and Min/Max:</strong> <code>h-auto</code>, <code>min-h-full</code>, <code>max-h-64</code>.</li>
+            </ul>
+        </section>
+
+        <!-- Syntax Examples Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Syntax Examples</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-100 p-4 rounded">
+                    <h3 class="font-bold text-gray-800">Fixed Height</h3>
+                    <code class="block bg-gray-200 p-2 rounded mt-2">h-24</code>
+                    <p class="text-sm text-gray-600 mt-2">Sets height to 6rem (96px).</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded">
+                    <h3 class="font-bold text-gray-800">Full Height</h3>
+                    <code class="block bg-gray-200 p-2 rounded mt-2">h-full</code>
+                    <p class="text-sm text-gray-600 mt-2">Sets height to 100% of parent.</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded">
+                    <h3 class="font-bold text-gray-800">Screen Height</h3>
+                    <code class="block bg-gray-200 p-2 rounded mt-2">h-screen</code>
+                    <p class="text-sm text-gray-600 mt-2">Sets height to 100vh (full viewport height).</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded">
+                    <h3 class="font-bold text-gray-800">Fractional Height</h3>
+                    <code class="block bg-gray-200 p-2 rounded mt-2">h-1/2</code>
+                    <p class="text-sm text-gray-600 mt-2">Sets height to 50% of parent.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-World Example Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Real-World Example: Responsive Card Layout</h2>
+            <p class="text-gray-700 mb-4">
+                In this example, we create a responsive card layout where each card has a consistent height using Tailwind's height utilities. This ensures uniform appearance across different screen sizes, useful for dashboards or product listings.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-100 p-4 rounded-lg shadow h-64 flex flex-col justify-between">
+                    <h3 class="text-xl font-bold text-blue-800">Card 1</h3>
+                    <p class="text-blue-700 flex-grow">This card uses <code>h-64</code> for a fixed height of 16rem, ensuring consistent sizing.</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Learn More</button>
+                </div>
+                <div class="bg-green-100 p-4 rounded-lg shadow h-64 flex flex-col justify-between">
+                    <h3 class="text-xl font-bold text-green-800">Card 2</h3>
+                    <p class="text-green-700 flex-grow">Height utilities help maintain alignment and prevent layout shifts.</p>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Explore</button>
+                </div>
+                <div class="bg-purple-100 p-4 rounded-lg shadow h-64 flex flex-col justify-between">
+                    <h3 class="text-xl font-bold text-purple-800">Card 3</h3>
+                    <p class="text-purple-700 flex-grow">Perfect for creating balanced, professional-looking interfaces.</p>
+                    <button class="bg-purple-500 text-white px-4 py-2 rounded mt-4">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Examples -->
+        <section>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Additional Height Examples</h2>
+            <div class="space-y-4">
+                <div class="bg-red-100 p-4 rounded h-24 flex items-center justify-center">
+                    <p class="text-red-800">This div has <code>h-24</code> (6rem height) and centers content vertically.</p>
+                </div>
+                <div class="bg-pink-100 p-4 rounded h-full min-h-32 flex items-center justify-center">
+                    <p class="text-pink-800">This div uses <code>h-full</code> with <code>min-h-32</code> for flexible height.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

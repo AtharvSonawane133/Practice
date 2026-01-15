@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Style Buttons with Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-emerald-950 bg-pink-600 text-center mt-3 font-semibold p-4 rounded-lg">Bootstrap-Style Buttons with Tailwind CSS</h1>
+
+    <div class="max-w-4xl mx-auto space-y-8">
+        <!-- Primary Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Primary Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-colors">Primary</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Primary (Focus)</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded active:bg-blue-700">Primary (Active)</button>
+                <button disabled class="bg-blue-300 text-white font-medium py-2 px-4 rounded cursor-not-allowed opacity-50">Primary (Disabled)</button>
+            </div>
+        </section>
+
+        <!-- Secondary Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-gray-600">Secondary Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded transition-colors">Secondary</button>
+                <button class="border border-gray-500 text-gray-700 hover:bg-gray-50 font-medium py-2 px-4 rounded transition-colors">Secondary (Outline)</button>
+            </div>
+        </section>
+
+        <!-- Success Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-green-600">Success Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded transition-colors">Success</button>
+                <button class="border border-green-500 text-green-700 hover:bg-green-50 font-medium py-2 px-4 rounded transition-colors">Success (Outline)</button>
+            </div>
+        </section>
+
+        <!-- Danger Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-red-600">Danger Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded transition-colors">Danger</button>
+                <button class="border border-red-500 text-red-700 hover:bg-red-50 font-medium py-2 px-4 rounded transition-colors">Danger (Outline)</button>
+            </div>
+        </section>
+
+        <!-- Warning Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-yellow-600">Warning Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded transition-colors">Warning</button>
+                <button class="border border-yellow-500 text-yellow-700 hover:bg-yellow-50 font-medium py-2 px-4 rounded transition-colors">Warning (Outline)</button>
+            </div>
+        </section>
+
+        <!-- Info Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-cyan-600">Info Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-4 rounded transition-colors">Info</button>
+                <button class="border border-cyan-500 text-cyan-700 hover:bg-cyan-50 font-medium py-2 px-4 rounded transition-colors">Info (Outline)</button>
+            </div>
+        </section>
+
+        <!-- Light and Dark Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-gray-600">Light and Dark Buttons</h2>
+            <div class="space-y-4">
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded transition-colors">Light</button>
+                <button class="bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 px-4 rounded transition-colors">Dark</button>
+            </div>
+        </section>
+
+        <!-- Button Sizes -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Button Sizes</h2>
+            <div class="space-y-4">
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-1 px-2 text-xs rounded transition-colors">Small</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 text-sm rounded transition-colors ml-2">Default</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 text-lg rounded transition-colors ml-2">Large</button>
+                </div>
+                <div>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-1 px-3 text-xs rounded-full transition-colors">Small (Rounded)</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 text-sm rounded-full transition-colors ml-2">Default (Rounded)</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 text-lg rounded-full transition-colors ml-2">Large (Rounded)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block Level Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Block Level Buttons</h2>
+            <div class="space-y-4">
+                <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-colors">Block Level Button</button>
+                <button class="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-4 rounded transition-colors">Large Block Button</button>
+            </div>
+        </section>
+
+        <!-- Button Groups -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Button Groups</h2>
+            <div class="inline-flex rounded-md shadow-sm">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-l transition-colors">Left</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 border-l border-blue-400 transition-colors">Middle</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-r transition-colors">Right</button>
+            </div>
+        </section>
+
+        <!-- Real-world Example -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Real-World Example: Action Buttons</h2>
+            <div class="space-y-4">
+                <div class="flex space-x-4">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-colors">Save Changes</button>
+                    <button class="border border-gray-500 text-gray-700 hover:bg-gray-50 font-medium py-2 px-4 rounded transition-colors">Cancel</button>
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded transition-colors">Delete</button>
+                </div>
+                <div class="flex space-x-4">
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-full transition-colors">✓ Success</button>
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 rounded-full transition-colors">⚠ Warning</button>
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-full transition-colors">✕ Error</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

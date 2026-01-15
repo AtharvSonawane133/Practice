@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode with Button</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Enable class-based dark mode -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-black transition-colors duration-500">
+
+    <!-- Header -->
+    <h1 class="
+        text-center 
+        text-3xl 
+        font-bold 
+        p-4
+        bg-pink-300 
+        text-black
+        dark:bg-gray-800 
+        dark:text-white
+    ">
+        Dark Mode with Button (Tailwind CSS)
+    </h1>
+
+    <!-- Toggle Button -->
+    <div class="flex justify-center mt-6">
+        <button 
+            onclick="toggleDarkMode()"
+            class="
+                px-6 py-3
+                bg-black 
+                text-white 
+                rounded-lg
+                dark:bg-white 
+                dark:text-black
+                transition
+            "
+        >
+            Toggle Dark Mode
+        </button>
+    </div>
+
+    <!-- Content -->
+    <div class="text-center mt-10">
+        <h2 class="text-5xl text-black dark:text-white">
+            Hello Atharv 👋
+        </h2>
+        <p class="text-xl mt-4 text-gray-700 dark:text-gray-300">
+            This is dark mode using a button.
+        </p>
+    </div>
+
+    <!-- Box -->
+    <div class="
+        size-24 
+        bg-blue-600 
+        dark:bg-blue-300 
+        mx-auto 
+        mt-10
+        rounded-lg
+    "></div>
+
+    <!-- Script -->
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle("dark");
+        }
+    </script>
+
+</body>
+</html>
